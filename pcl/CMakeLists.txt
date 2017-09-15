@@ -15,3 +15,6 @@ target_link_libraries(pcd_read_test ${Boost_LIBRARIES} ${PCL_LIBRARIES})
 add_executable (cloud_viewer cloud_viewer.cpp)
 target_link_libraries (cloud_viewer ${Boost_LIBRARIES} ${PCL_LIBRARIES})
 
+add_executable (cloud_viewer_bin bin_read.cpp)
+target_link_libraries (cloud_viewer_bin ${Boost_LIBRARIES} ${PCL_LIBRARIES})
+
